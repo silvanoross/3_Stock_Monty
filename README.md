@@ -78,7 +78,7 @@ It should look something like this:
     ALPACA_SECRET_KEY = '<YOUR SECRET KEY HERE>'
 ```
 
-Next open **'financial_planning_tools.ipynb'** and click the double arrow to run the notebook. Alternatively you can run each cell individually.
+Next open **'Three_Stock_Monte'** and click the double arrow to run the notebook. Alternatively you can run each cell individually.
 
 Make sure to follow the pseudocode to see the coding logic and fully understand what is being displayed.
 
