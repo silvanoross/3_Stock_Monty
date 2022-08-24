@@ -10,8 +10,8 @@ To Run this you will need your own API key and API secret key for the Alpaca API
 Set up an account at [Alpaca](https://alpaca.markets/) for free and go to your
 paper account to find the keys for the API. Save these in a **.env** file in the
 same directory as this jupyter notebook and title them,
-ALPACA_API_KEY = '>Your Key Here<'
-ALPACA_SECRET_KEY = '>Your Key Here<'
+ALPACA_API_KEY = '<Your Key Here>'
+ALPACA_SECRET_KEY = '<Your Key Here>'
 
 ---
 
