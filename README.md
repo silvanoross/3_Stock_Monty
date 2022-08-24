@@ -25,15 +25,13 @@ Libraries used:
 
 [Jupyter Labs](https://jupyter.org/) - An ipython kernel for interactive computing in python
 
-[OS]()
+[OS](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interface
 
-[Dotenv]()
+[Dotenv](https://github.com/motdotla/dotenv) - Module to load environment variables 
 
-[Alpaca Trade API]()
+[Alpaca Trade API](https://alpaca.markets/docs/) - API for the Alpaca trading platform
 
-[MC Forecast Tools]()
-
-
+**MC Forecast Tools** - A copy of this module is included in the downloadable files for this project
 
 ---
 
@@ -53,6 +51,7 @@ You will need to run:
 ```python
     pip install dotenv
     pip install alpaca-trade-api
+```
 
 A copy of the **'MCForecastTools.py'** file is included in this repository.
 
@@ -62,33 +61,28 @@ A copy of the **'MCForecastTools.py'** file is included in this repository.
 
 To run this jupyter lab notebook you will need to use GitBash and navigate to where you have exported the files associated with this project.
 
-Next you will need to perform the following
+Next you will need to type the following:
 
-![Activate](images/activate_lab.png)
+```python
+    jupyter lab --ContentsManager.allow_hidden=True
+```
 
-This will open a jupyter lab notebook in your default browser. 
+This will launch a Jupyter Labs notebook containing the working files with the **allow_hidden** permission to view **.env** files.
 
-Next open **'risk_return_analysis.ipynb'** and click ![double_arrow](images/doube_arrow.png)
+This notebook uses the Alpaca API and you will need the two keys stated above in the description: 'ALPACA_API_KEY' AND 'ALPACA_SECRET_KEY'. Create a new **.env** file and store the values here.
 
-This will run the entire notebook. Make sure to follow the pseudocode to see what has been coded and what is being displayed. 
+It should look something like this:
 
----
+```python
+    ALPACA_API_KEY = '<YOUR KEY HERE>'
+    ALPACA_SECRET_KEY = '<YOUR SECRET KEY HERE>'
+```
 
-## Highlights:
+Next open **'financial_planning_tools.ipynb'** and click the double arrow to run the notebook. Alternatively you can run each cell individually.
 
-Here are a few snippets of what you can find in this project
+Make sure to follow the pseudocode to see the coding logic and fully understand what is being displayed.
 
-### Cumulative Returns:
-
-![whale_overaly](images/whale_overlay.png)
-
-### Volatility:
-
-![volatility](images/volatility.png)
-
-### Sharpe Ratios:
-
-![sharpe_ratios](images/sharpe_ratios.png)
+Note - This may take a while to run as the Monte Carlo Simulation typically has a faily long run time. Expect around 1-2 minutes of waiting before notebook is complete.
 
 ---
 
